@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Servlet;
+
+import org.example.Difference;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

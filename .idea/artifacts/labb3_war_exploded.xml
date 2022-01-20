@@ -1,13 +1,38 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="labb3:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/labb3_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/web-lab-jsp-1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>labb3</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
-      <element id="javaee-facet-resources" facet="labb3/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="labb3" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:3.0.0" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-core:2.3.0.1" />
+          <element id="library" level="project" name="Maven: javax.activation:javax.activation-api:1.2.0" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.25.0-GA" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.2" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.8" />
+          <element id="library" level="project" name="Maven: org.jvnet.staxex:stax-ex:1.8.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.16" />
+        </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/web-lab-jsp-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="labb3/web/Web" />
     </root>
   </artifact>
 </component>

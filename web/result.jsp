@@ -9,22 +9,23 @@
 </head>
 <body>
 <%
-    Difference result = (Difference) session.getAttribute("разность");
+    Difference result = (Difference) session.getAttribute("Difference");
     if (result == null) {%>
 <meta http-equiv="refresh" content="5; URL=index.html"/>
 <h1>Ошибка!</h1>
 <li><a href="index.html">Домашняя страница</a></li>
 <%
-    }else {
+} else {
 %>
+<%result.subtract();%>
 <h1>Результат разности</h1>
 
-<p>Вы ввели:  <% out.println(result.getReduced() + " - " + result.getDeductible()); %>
+<p>Вы ввели: <% out.println(result.getReduced() + " - " + result.getDeductible()); %>
 
 <p>Результат: <% out.println(result.getResult()); %>
-    <li><a href="index.html">Скачать</a></li>
-    <li><a href="index.html">Домашняя страница</a></li>
-        <%
+<li><a href="result.xml">Скачать XML</a></li>
+<li><a href="index.html">Домашняя страница</a></li>
+<%
     }
 %>
 </body>

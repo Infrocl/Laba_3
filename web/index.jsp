@@ -7,7 +7,7 @@
     try {
         double deductible = Double.parseDouble(x2);
         double reduced = Double.parseDouble(x1);
-        request.getSession(true).setAttribute("разность", new Difference(reduced, deductible));
+        request.getSession(true).setAttribute("Difference", new Difference(reduced, deductible));
     } catch (NumberFormatException e) {
         e.printStackTrace();
     } finally {
